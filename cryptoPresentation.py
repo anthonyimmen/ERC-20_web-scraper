@@ -28,11 +28,12 @@ for i in range(1, 2):
       if (str(transfer.string).isnumeric()):
         transfer_list.append(transfer.string)
 
-# graphs our token names vs 7 day transfer totals using matplotlib  
-plt.plot(erc20_list, transfer_list)
+# graphs our token names vs 7 day transfer totals using matplotlib
+erc20_list = erc20_list[::-1]
+transfer_list = transfer_list[::-1]
+plt.barh(transfer_list, erc20_list)
 plt.xlabel('ERC-20 Tokens')
 plt.ylabel('7 Day Transfer Total')
-plt.gca().invert_yaxis()
 plt.yticks(fontsize = 8)
 plt.xticks(rotation = (90), fontsize = 5)
 plt.show()
