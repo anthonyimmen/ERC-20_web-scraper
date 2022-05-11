@@ -1,3 +1,6 @@
+# Overview
+This was my final project for my Blockchains and Cryptocurrencies class. For the project I conducted research within my decided topic and drafted a 12 page research paper over this topic and presented my research. This repo contains the research paper, presentation, and web scraper that I created to assist in my research.
+
 # ERC-20_web-scraper
 Created a web-scraper to pull ERC-20 token names and their 7 day transfer totals. These two data sets are then graphed against each other matplotlib.
 
